@@ -45,7 +45,6 @@
 body {
 	margin: 0;
 	font-family: 'Allerta', sans-serif;
-	overflow: hidden;
 }
 
 table {
@@ -335,6 +334,10 @@ input:focus, textarea:focus {
 	max-width: 500px;
 	margin: 0 auto 90px;
 	border: 5px solid #efefef;
+}
+
+.no-scroll {
+	overflow: hidden;
 }
 
 /*-----------MEDIA QUERIES------------*/

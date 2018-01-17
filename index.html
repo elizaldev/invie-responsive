@@ -122,23 +122,22 @@
 
 		var $burguerButton = document.getElementById("burguer-button");
 		var $menu = document.getElementById("menu");
-
+		var $body = document.body;
 
 		function toggleMenu () {
 			$menu.classList.toggle('active');
 			$burguerButton.classList.toggle('icon-close');
+			$body.classList.toggle('no-scroll');
 		};
 		function showMenu () {
 			$menu.classList.add('active');
 			$burguerButton.classList.add('icon-close');
+			$body.classList.add('no-scroll');
 		};
 		function hideMenu () {
 			$menu.classList.remove('active');
 			$burguerButton.classList.remove('icon-close');
-		};
-		function toggleMenu () {
-			$menu.classList.toggle('active');
-			$burguerButton.classList.toggle('icon-close');
+			$body.classList.remove('no-scroll');
 		};
 
 
