@@ -45,6 +45,7 @@
 body {
 	margin: 0;
 	font-family: 'Allerta', sans-serif;
+	overflow: hidden;
 }
 
 table {
