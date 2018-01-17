@@ -123,6 +123,8 @@
 		var $burguerButton = document.getElementById("burguer-button");
 		var $menu = document.getElementById("menu");
 
+
+
 		function toggleMenu () {
 			$menu.classList.toggle('active');
 			$burguerButton.classList.toggle('icon-close');
@@ -145,13 +147,13 @@
 			if(consulta.matches)
 				{
 					$burguerButton.style="display: inline-block";
-					$burguerButton.addEventListener('touchstart', toggleMenu);
+					$burguerButton.addEventListener('click', toggleMenu);
 					
 				}
 			else
 				{
 					$burguerButton.style="display: none";
-					$burguerButton.removeEventListener('touchstart', toggleMenu);
+					$burguerButton.removeEventListener('click', toggleMenu);
 				}
 		};
 
