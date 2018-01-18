@@ -218,7 +218,7 @@ input:focus, textarea:focus {
 }
 
 .contacto {
-	display: flex;
+	display: block;
 	width: 300px;
 	flex-wrap:  wrap;
 	align-items: center ;
@@ -230,10 +230,12 @@ input:focus, textarea:focus {
 
 .contacto strong {
 	display: block;
+	margin-top: 20px;
 }
 
 .contacto a {
 	color: white;
+	display: block;
 	text-decoration: none;
 	margin: 10px 10px 10px 0;
 }
@@ -267,13 +269,14 @@ input:focus, textarea:focus {
 }
 
 .intereses label {
-	 font-size: 12px;
+	 font-size: 16px;
 	 font-weight: 200;
 	 display: inline-block;
 }
 
 .formulario label {
 	margin-top: 10px;
+	font-size: 16px;
 }
 
 .formulario label, .sexo, .intereses {
@@ -282,7 +285,11 @@ input:focus, textarea:focus {
 
 .sexo{
 	margin-top: 12px;
-	display: inherit;
+	display: block;
+}
+
+.sexo label {
+	display: block;
 }
 
 .menu li:before {
@@ -339,6 +346,14 @@ input:focus, textarea:focus {
 .no-scroll {
 	overflow: hidden;
 }
+
+input[type="text"],
+input[type="email"] {
+		font-size: 16px;
+		padding: 5px 7px;
+		color: #666;
+		font-family: 'Allerta', sans-serif;
+	}
 
 /*-----------MEDIA QUERIES------------*/
 
